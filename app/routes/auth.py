@@ -6,7 +6,7 @@ from app.core.database import get_db_conn
 
 router = APIRouter()
 
-@router.post("/login", response_model=UserInfo)
+@router.post("/login")
 def login(token_req: TokenRequest, response: Response):
     try:
         decoded = firebase_auth.verify_id_token(token_req.idToken)
