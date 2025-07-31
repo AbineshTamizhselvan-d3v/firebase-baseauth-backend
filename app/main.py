@@ -15,7 +15,7 @@ app = FastAPI()
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://firebase-baseauth-frontend-144895597889.europe-west1.run.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
